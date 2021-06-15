@@ -1,95 +1,228 @@
-19335031703151681
-.tracer
-DFN1006-2
-DFN package size 1006 2 pins
-DFN package size 1006 2 pins
+19365893216508769
+.demo32
+BNC_TEConnectivity_1634503_Vertical
+BNC female PCB mount 4 pin straight chassis connector
+BNC female PCB mount 4 pin straight chassis connector 
+0
+5
+2
+.demo32
+BatteryHolder_Keystone_1059_1x2032
+
+Keystone type 1059 coin cell retainer
+0
+3
+3
+.demo32
+C_0805_2012Metric
+Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-.tracer
-MODULE_OLED_490
+.demo32
+Crystal_C26-LF_D2.1mm_L6.5mm_Horizontal_1EP_style1
+Crystal THT C26-LF 6.5mm length 2.06mm diameter
+['C26-LF']
+0
+3
+3
+.demo32
+Crystal_SMD_Abracon_ABM7-2Pin_6.0x3.5mm
+SMD Crystal Abracon ABM7, https://abracon.com/Resonators/abm7.pdf
+SMD SMT crystal
+0
+2
+2
+.demo32
+DFN-8-1EP_6x5mm_P1.27mm_EP2x2mm
+DD Package; 8-Lead Plastic DFN (6mm x 5mm) (see http://www.everspin.com/file/236/download)
+dfn 
+0
+13
+9
+.demo32
+DFN-10_3x3mm_P0.5mm
+10-Lead Plastic Dual Flat No-Lead Package, 3x3mm Body (see NXP MMA7660FC data sheet)
+DFN 0.5
+0
+10
+10
+.demo32
+LED_0805_2012Metric_LiteOn_C171
+LED SMD 0805 (2012 Metric)
+LED
+0
+2
+2
+.demo32
+LQFP-64_10x10mm_P0.5mm
+LQFP, 64 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP QFP
+0
+64
+64
+.demo32
+L_0805_2012Metric
+Inductor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+inductor
+0
+2
+2
+.demo32
+MODULE_OLED_910
 
 
 0
 4
 4
-.tracer
-MODULE_TINY_2040
+.demo32
+MODULE_TRACER
 
-
+Surface mounted pin header SMD 2x02 2.54mm double row
 0
-19
-19
-.tracer
+4
+4
+.demo32
+MountingHole_3.2mm_M3_ISO7380_Pad
+Mounting Hole 3.2mm, M3, ISO7380
+mounting hole 3.2mm m3 iso7380
+0
+1
+1
+.demo32
 OSHW-Logo2_7.3x6mm_SilkScreen
 Open Source Hardware Symbol
 Logo Symbol OSHW
 0
 0
 0
-.tracer
-REED_RELAY_COTO_9913
-Coto Technologies SPST Reed Relay 9913
-Coto Reed SPST Relay
-0
-4
-4
-.tracer
+.demo32
 R_0805_2012Metric
 Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
 resistor
 0
 2
 2
-.tracer
-SAMTEC-SSQ-102-02-SIDEWAYS
-4.93 mm tail length
-
+.demo32
+Relay_DPDT_Omron_G6K-2F
+Omron G6K-2F relay package http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf
+Omron G6K-2F relay
 0
-4
-4
-.tracer
-SOIC-24W_7.5x15.4mm_P1.27mm
-SOIC, 24 Pin (JEDEC MS-013AD, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_wide-rw/RW_24.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+8
+8
+.demo32
+RotaryEncoder_CTS_11CE
+CTS rotary encoder, 11CE
+rotary encoder
+0
+7
+6
+.demo32
+SOIC-16_3.9x9.9mm_P1.27mm
+SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOIC SO
 0
-24
-24
-.tracer
+16
+16
+.demo32
 SOT-23
 SOT-23, Standard
 SOT-23
 0
 3
 3
-.tracer
-SOT-23-6
-SOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py
+.demo32
+SOT-23-5
+SOT, 5 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AA), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOT TO_SOT_SMD
 0
-6
-6
-.tracer
-SOT50P160X60-6N
-
-
-0
-6
-6
-.tracer
-SW_Push_1P1T-SH_NO_CK_KMR2xxG
-CK components KMR2 tactile switch with ground pin http://www.ckswitches.com/media/1479/kmr2.pdf
-tactile switch kmr2
-0
 5
+5
+.demo32
+SOT-223-3_TabPin2
+module CMS SOT223 4 pins
+CMS SOT
+0
+4
 3
-.tracer
-via-0.8x0.4
+.demo32
+SW_PUSH_6mm
+https://www.omron.com/ecb/products/pdf/en-b3f.pdf
+tact sw push 6mm
+0
+4
+2
+.demo32
+TE_640454-2-FLIP
+Retention clip flipped around
+
+0
+2
+2
+.demo32
+TE_640454-4
 
 
 0
+4
+4
+.demo32
+TE_640454-4_FLIP
+
+
+0
+4
+4
+.demo32
+TE_640454-6
+
+
+0
+6
+6
+.demo32
+TE_640454-9
+
+
+0
+9
+9
+.demo32
+TestPoint_Keystone_5000-5004_Miniature
+Keystone Miniature THM Test Point 5000-5004, http://www.keyelco.com/product-pdf.cfm?p=1309
+Through Hole Mount Test Points
+0
 1
 1
+.demo32
+USB_Micro-AB_Molex_47590-0001
+Micro USB AB receptable, right-angle inverted (https://www.molex.com/pdm_docs/sd/475900001_sd.pdf)
+Micro AB USB SMD
+0
+14
+6
+.demo32
+microSD_HC_Hirose_DM3BT-DSF-PEJS
+Micro SD, SMD, reverse on-board, right-angle, push-pull (https://www.hirose.com/product/en/download_file/key_name/DM3BT-DSF-PEJS/category/Drawing%20(2D)/doc_file_id/44097/?file_category_id=6&item_id=06090029900&is_series=)
+Micro SD
+0
+16
+11
+Audio_Module
+Reverb_BTDR-1H
+Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
+audio belton reverb
+0
+7
+7
+Audio_Module
+Reverb_BTDR-1V
+Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
+audio belton reverb
+0
+7
+7
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)

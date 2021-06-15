@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/Users/rclott/root/files/projs/novac/eda/demo32/demo32.sch</source>
-    <date>2021 June 03, Thursday 18:00:04</date>
+    <date>2021 June 15, Tuesday 11:40:43</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>DEMO32</title>
+        <title>TARTE-PY</title>
         <company>THE STUMBLER</company>
         <rev>-</rev>
-        <date>2021-06-03</date>
+        <date>2021-06-11</date>
         <source>demo32.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -20,15 +20,16 @@
   </design>
   <components>
     <comp ref="J9">
-      <value>USB_TYPE_B_MICRO</value>
+      <value>USB_MICRO_AB</value>
+      <footprint>.demo32:USB_Micro-AB_Molex_47590-0001</footprint>
       <datasheet>~</datasheet>
-      <libsource lib=".novac" part="USB_B_Micro" description=""/>
+      <libsource lib=".demo32" part="USB_B_Micro" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B47EB7</tstamp>
     </comp>
     <comp ref="Q1">
-      <value>BSS84</value>
-      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <value>DMP2160UW</value>
+      <footprint>.demo32:SOT-23</footprint>
       <datasheet>http://assets.nexperia.com/documents/data-sheet/BSS84.pdf</datasheet>
       <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
@@ -36,26 +37,29 @@
     </comp>
     <comp ref="R22">
       <value>100K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B4B524</tstamp>
     </comp>
     <comp ref="D1">
       <value>MSE1PB-M3/89A</value>
-      <libsource lib=".novac" part="DIODE" description=""/>
+      <footprint>.demo32:LED_0805_2012Metric_LiteOn_C171</footprint>
+      <libsource lib=".demo32" part="DIODE" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B4BB87</tstamp>
     </comp>
     <comp ref="U3">
       <value>MMA7660</value>
-      <footprint>Package_DFN_QFN:DFN-10_2x2mm_P0.4mm</footprint>
+      <footprint>.demo32:DFN-10_3x3mm_P0.5mm</footprint>
       <datasheet>http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8653FC.pdf</datasheet>
-      <libsource lib=".novac" part="MMA7660" description="3-Axis 10-bit Digital Accelerometer with I2C interface"/>
+      <libsource lib=".demo32" part="MMA7660" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B58EDA</tstamp>
     </comp>
     <comp ref="Y1">
       <value>12MHz</value>
+      <footprint>.demo32:Crystal_SMD_Abracon_ABM7-2Pin_6.0x3.5mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
       <sheetpath names="/" tstamps="/"/>
@@ -63,122 +67,135 @@
     </comp>
     <comp ref="U4">
       <value>MIC2005A-1YM5</value>
-      <libsource lib=".novac" part="MIC2005A-1YM5" description=""/>
+      <footprint>.demo32:SOT-23-5</footprint>
+      <libsource lib=".demo32" part="MIC2005A-1YM5" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B6A132</tstamp>
     </comp>
     <comp ref="R10">
       <value>560</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B9521F</tstamp>
     </comp>
     <comp ref="R1">
       <value>22</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B965AD</tstamp>
     </comp>
     <comp ref="R2">
       <value>22</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B96981</tstamp>
     </comp>
     <comp ref="R16">
       <value>560</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B96FB6</tstamp>
     </comp>
-    <comp ref="U2">
-      <value>MCP1703</value>
-      <libsource lib=".novac" part="MCP1703" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60BBC6BD</tstamp>
-    </comp>
     <comp ref="C17">
       <value>4.7uF</value>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
-      <libsource lib=".novac" part="C2_SMALL" description=""/>
+      <libsource lib=".demo32" part="C2_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60BD372D</tstamp>
     </comp>
     <comp ref="C16">
       <value>2.2uF</value>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
-      <libsource lib=".novac" part="C2_SMALL" description=""/>
+      <libsource lib=".demo32" part="C2_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60BD6813</tstamp>
     </comp>
     <comp ref="J108">
-      <value>EXT_POWER_IN</value>
-      <libsource lib=".novac" part="IO_JACK_M04" description=""/>
+      <value>EX_PWR_IN_1x4</value>
+      <footprint>.demo32:TE_640454-4_FLIP</footprint>
+      <libsource lib=".demo32" part="IO_JACK_M04" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B6A1DF</tstamp>
     </comp>
     <comp ref="D2">
       <value>LED-RED</value>
-      <libsource lib=".novac" part="LED" description=""/>
+      <footprint>.demo32:LED_0805_2012Metric_LiteOn_C171</footprint>
+      <libsource lib=".demo32" part="LED" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B81528</tstamp>
     </comp>
     <comp ref="R4">
       <value>560</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B8623A</tstamp>
     </comp>
     <comp ref="D3">
       <value>LED-GREEN</value>
-      <libsource lib=".novac" part="LED" description=""/>
+      <footprint>.demo32:LED_0805_2012Metric_LiteOn_C171</footprint>
+      <libsource lib=".demo32" part="LED" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B8F334</tstamp>
     </comp>
     <comp ref="R6">
       <value>560</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B8F33A</tstamp>
     </comp>
     <comp ref="D4">
       <value>LED-YELLOW</value>
-      <libsource lib=".novac" part="LED" description=""/>
+      <footprint>.demo32:LED_0805_2012Metric_LiteOn_C171</footprint>
+      <libsource lib=".demo32" part="LED" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B90B0D</tstamp>
     </comp>
     <comp ref="R7">
       <value>560</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B90B13</tstamp>
     </comp>
     <comp ref="D5">
       <value>LED-BLUE</value>
-      <libsource lib=".novac" part="LED" description=""/>
+      <footprint>.demo32:LED_0805_2012Metric_LiteOn_C171</footprint>
+      <libsource lib=".demo32" part="LED" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B92193</tstamp>
     </comp>
     <comp ref="R5">
       <value>560</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B92199</tstamp>
     </comp>
     <comp ref="C2">
       <value>10pF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60BA2A89</tstamp>
     </comp>
     <comp ref="C1">
       <value>10pF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60BA6033</tstamp>
     </comp>
     <comp ref="Y2">
       <value>32.768kHz</value>
+      <footprint>.demo32:Crystal_C26-LF_D2.1mm_L6.5mm_Horizontal_1EP_style1</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
       <sheetpath names="/" tstamps="/"/>
@@ -186,31 +203,28 @@
     </comp>
     <comp ref="C12">
       <value>10pF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60BB1FFA</tstamp>
     </comp>
     <comp ref="C11">
       <value>10pF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60BB2004</tstamp>
     </comp>
-    <comp ref="SW2">
-      <value>USER</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60C9DF3C</tstamp>
-    </comp>
     <comp ref="R17">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60C9DF50</tstamp>
     </comp>
     <comp ref="L1">
       <value>1K</value>
+      <footprint>.demo32:L_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="L_Ferrite" description="Inductor with ferrite core"/>
       <sheetpath names="/" tstamps="/"/>
@@ -218,97 +232,111 @@
     </comp>
     <comp ref="C10">
       <value>4.7uF</value>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
-      <libsource lib=".novac" part="C2_SMALL" description=""/>
+      <libsource lib=".demo32" part="C2_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60D7F3BE</tstamp>
     </comp>
     <comp ref="C9">
       <value>0.1uF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60D7FA37</tstamp>
     </comp>
     <comp ref="C18">
       <value>4.7uF</value>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
-      <libsource lib=".novac" part="C2_SMALL" description=""/>
+      <libsource lib=".demo32" part="C2_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DCF9C6</tstamp>
     </comp>
     <comp ref="R19">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60E490B9</tstamp>
     </comp>
     <comp ref="C8">
       <value>0.1uF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60E682DA</tstamp>
     </comp>
     <comp ref="U1">
       <value>STM32F405RGTx</value>
-      <footprint>Package_QFP:LQFP-64_10x10mm_P0.5mm</footprint>
+      <footprint>.demo32:LQFP-64_10x10mm_P0.5mm</footprint>
       <datasheet>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf</datasheet>
-      <libsource lib=".novac" part="STM32F405RGTx" description="ARM Cortex-M4 MCU, 1024KB flash, 128KB RAM, 168MHz, 1.8-3.6V, 51 GPIO, LQFP-64"/>
+      <libsource lib=".demo32" part="STM32F405RGTx" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60ED7A91</tstamp>
     </comp>
     <comp ref="C19">
       <value>2.2uF</value>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
-      <libsource lib=".novac" part="C2_SMALL" description=""/>
+      <libsource lib=".demo32" part="C2_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60FDD63F</tstamp>
     </comp>
     <comp ref="C20">
       <value>2.2uF</value>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
-      <libsource lib=".novac" part="C2_SMALL" description=""/>
+      <libsource lib=".demo32" part="C2_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60FDE9A7</tstamp>
     </comp>
     <comp ref="C7">
       <value>4.7uF</value>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
-      <libsource lib=".novac" part="C2_SMALL" description=""/>
+      <libsource lib=".demo32" part="C2_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60FE505E</tstamp>
     </comp>
     <comp ref="C3">
       <value>0.1uF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60FE553E</tstamp>
     </comp>
     <comp ref="C4">
       <value>0.1uF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60FFE9B1</tstamp>
     </comp>
     <comp ref="C5">
       <value>0.1uF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60FFECD0</tstamp>
     </comp>
     <comp ref="C6">
       <value>0.1uF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60FFF016</tstamp>
     </comp>
     <comp ref="R15">
       <value>100K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61292272</tstamp>
     </comp>
     <comp ref="SW103">
       <value>BOOT</value>
+      <footprint>.demo32:SW_PUSH_6mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
@@ -316,18 +344,21 @@
     </comp>
     <comp ref="R3">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60C7E3BB</tstamp>
     </comp>
     <comp ref="C13">
       <value>0.1uF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60C7B49D</tstamp>
     </comp>
     <comp ref="SW1">
       <value>RESET</value>
+      <footprint>.demo32:SW_PUSH_6mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
@@ -335,42 +366,49 @@
     </comp>
     <comp ref="R20">
       <value>100K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6140FC27</tstamp>
     </comp>
     <comp ref="R14">
       <value>100K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61425AC5</tstamp>
     </comp>
     <comp ref="R9">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61733D12</tstamp>
     </comp>
     <comp ref="R8">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>617352B5</tstamp>
     </comp>
     <comp ref="R11">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>618A2C51</tstamp>
     </comp>
     <comp ref="R12">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>618A2C5B</tstamp>
     </comp>
     <comp ref="J101">
       <value>ANALOG_IN1</value>
+      <footprint>.demo32:BNC_TEConnectivity_1634503_Vertical</footprint>
       <datasheet> ~</datasheet>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -378,6 +416,7 @@
     </comp>
     <comp ref="J102">
       <value>ANALOG_IN2</value>
+      <footprint>.demo32:BNC_TEConnectivity_1634503_Vertical</footprint>
       <datasheet> ~</datasheet>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -385,422 +424,375 @@
     </comp>
     <comp ref="R102">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60BB7DF4</tstamp>
     </comp>
     <comp ref="R101">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60BB8BE4</tstamp>
     </comp>
     <comp ref="U101">
       <value>MR25H10</value>
-      <libsource lib=".novac" part="MR25H10" description="Magnetoresistive memory with SPI interface"/>
+      <footprint>.demo32:DFN-8-1EP_6x5mm_P1.27mm_EP2x2mm</footprint>
+      <libsource lib=".demo32" part="MR25H10" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60F7075F</tstamp>
     </comp>
     <comp ref="J105">
-      <value>SERIAL_IO</value>
-      <libsource lib=".novac" part="IO_JACK_M04" description=""/>
+      <value>SERIAL_IO_1x4</value>
+      <footprint>.demo32:TE_640454-4</footprint>
+      <libsource lib=".demo32" part="IO_JACK_M04" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6111109E</tstamp>
     </comp>
     <comp ref="A101">
       <value>OLED_910MILS_128x32_I2C</value>
-      <libsource lib=".novac" part="ASSY_OLED_910MILS_128x32_I2C" description=""/>
+      <footprint>.demo32:MODULE_OLED_910</footprint>
+      <libsource lib=".demo32" part="ASSY_OLED_910MILS_128x32_I2C" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6135767F</tstamp>
     </comp>
     <comp ref="R107">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6135A826</tstamp>
     </comp>
     <comp ref="R108">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6135A830</tstamp>
     </comp>
     <comp ref="J8">
       <value>Micro_SD_Card_Det</value>
+      <footprint>.demo32:microSD_HC_Hirose_DM3BT-DSF-PEJS</footprint>
       <datasheet>https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&amp;item_id=195&amp;is_series=1</datasheet>
-      <libsource lib=".novac" part="Micro_SD_Card_Det" description="Micro SD Card Socket with card detection pins"/>
+      <libsource lib=".demo32" part="Micro_SD_Card_Det" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B6021B</tstamp>
     </comp>
     <comp ref="K101">
       <value>G6K-2</value>
-      <libsource lib=".novac" part="G6K-2" description=""/>
+      <footprint>.demo32:Relay_DPDT_Omron_G6K-2F</footprint>
+      <libsource lib=".demo32" part="G6K-2" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61D5F4FD</tstamp>
     </comp>
     <comp ref="J107">
-      <value>RELAY_CONTACTS</value>
-      <libsource lib=".novac" part="IO_JACK_M08" description=""/>
+      <value>RELAY_CONTACTS_1x9</value>
+      <footprint>.demo32:TE_640454-9</footprint>
+      <libsource lib=".demo32" part="IO_JACK_M09" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61D6397B</tstamp>
     </comp>
     <comp ref="U102">
       <value>ULN2003A</value>
-      <libsource lib=".novac" part="ULN2003" description=""/>
+      <footprint>.demo32:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <libsource lib=".demo32" part="ULN2003" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>620CC4ED</tstamp>
     </comp>
     <comp ref="R109">
       <value>100K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6241C700</tstamp>
     </comp>
     <comp ref="J106">
-      <value>EXPANSION_IO</value>
-      <libsource lib=".novac" part="IO_JACK_M08" description=""/>
+      <value>EXPANSION_IO_1x9</value>
+      <footprint>.demo32:TE_640454-9</footprint>
+      <libsource lib=".demo32" part="IO_JACK_M09" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62473684</tstamp>
     </comp>
-    <comp ref="XR29">
+    <comp ref="XR7">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PB10.29</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60BC4854</tstamp>
     </comp>
-    <comp ref="XR30">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60BC5EDE</tstamp>
-    </comp>
-    <comp ref="J10">
-      <value>LIPO_BATTERY</value>
-      <libsource lib=".novac" part="IO_JACK_M02" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60B4C37C</tstamp>
-    </comp>
-    <comp ref="BT101">
-      <value>2032_SOCK</value>
-      <datasheet>~</datasheet>
-      <libsource lib=".novac" part="Battery_Cell" description="Single-cell battery"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60EADC08</tstamp>
-    </comp>
     <comp ref="R110">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6139363F</tstamp>
     </comp>
     <comp ref="R111">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6141A1FE</tstamp>
     </comp>
     <comp ref="R112">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6141A639</tstamp>
     </comp>
     <comp ref="R113">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6141A9B7</tstamp>
     </comp>
     <comp ref="R114">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6141ADDA</tstamp>
     </comp>
     <comp ref="R115">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6141B191</tstamp>
     </comp>
     <comp ref="R116">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6141B5E9</tstamp>
     </comp>
     <comp ref="R117">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6141B971</tstamp>
     </comp>
-    <comp ref="XR33">
+    <comp ref="XR8">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PB13.34</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616AD4D7</tstamp>
     </comp>
-    <comp ref="XR34">
+    <comp ref="XR9">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616ADA22</tstamp>
-    </comp>
-    <comp ref="XR35">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PB14.35</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616ADD8C</tstamp>
     </comp>
-    <comp ref="XR36">
+    <comp ref="XR10">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616AE0E3</tstamp>
-    </comp>
-    <comp ref="XR26">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PB1.27</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616AE395</tstamp>
     </comp>
-    <comp ref="XR27">
+    <comp ref="XR11">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616AE791</tstamp>
-    </comp>
-    <comp ref="XR51">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PC10.51</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616AEB36</tstamp>
     </comp>
-    <comp ref="XR52">
+    <comp ref="XR12">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616AF05F</tstamp>
-    </comp>
-    <comp ref="XR54">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PD2.54</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616AF439</tstamp>
     </comp>
-    <comp ref="XR53">
+    <comp ref="XR13">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616AF725</tstamp>
-    </comp>
-    <comp ref="XR39">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PC8.39</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616AFA1F</tstamp>
     </comp>
-    <comp ref="XR40">
+    <comp ref="XR14">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616AFF11</tstamp>
-    </comp>
-    <comp ref="XR41">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PA8.41</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616B0228</tstamp>
     </comp>
-    <comp ref="XR8">
+    <comp ref="XR15">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PC0.8</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616B04A9</tstamp>
     </comp>
-    <comp ref="XR9">
+    <comp ref="XR16">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616B0B3E</tstamp>
-    </comp>
-    <comp ref="XR10">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PC2.10</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616B0F1D</tstamp>
     </comp>
-    <comp ref="XR11">
+    <comp ref="XR17">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616B12F2</tstamp>
-    </comp>
-    <comp ref="XR24">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PC4.24</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616B15D4</tstamp>
     </comp>
-    <comp ref="XR25">
+    <comp ref="XR18">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616B18DD</tstamp>
-    </comp>
-    <comp ref="XR37">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PC6.37</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616B1C03</tstamp>
     </comp>
-    <comp ref="XR38">
+    <comp ref="XR19">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616B1E93</tstamp>
-    </comp>
-    <comp ref="XR2">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PC13.2</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616B20A9</tstamp>
     </comp>
-    <comp ref="XR46">
+    <comp ref="XR20">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PA13.46</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616B2641</tstamp>
     </comp>
-    <comp ref="XR49">
+    <comp ref="XR21">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616B2D4B</tstamp>
-    </comp>
-    <comp ref="XR50">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PA15.50</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>616B2FD1</tstamp>
     </comp>
-    <comp ref="XR56">
+    <comp ref="XR6">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616B33EE</tstamp>
-    </comp>
-    <comp ref="XR1021">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>616B3728</tstamp>
-    </comp>
-    <comp ref="XR61">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PB8.61</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6172D90E</tstamp>
     </comp>
-    <comp ref="XR62">
+    <comp ref="XR4">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6172DE6D</tstamp>
-    </comp>
-    <comp ref="XR28">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PB5.57</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6172E208</tstamp>
     </comp>
-    <comp ref="XR57">
+    <comp ref="XR5">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6172E631</tstamp>
-    </comp>
-    <comp ref="XR58">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PB7.59</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6172EA2D</tstamp>
     </comp>
-    <comp ref="XR59">
+    <comp ref="XR22">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6172ECF7</tstamp>
-    </comp>
-    <comp ref="XR14">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PA0.14</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>617893CB</tstamp>
     </comp>
-    <comp ref="XR15">
+    <comp ref="XR25">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>61789B14</tstamp>
-    </comp>
-    <comp ref="XR5">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>61789E9F</tstamp>
-    </comp>
-    <comp ref="XR6">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>618955AE</tstamp>
-    </comp>
-    <comp ref="XR3">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>61895961</tstamp>
-    </comp>
-    <comp ref="XR4">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>61895F20</tstamp>
-    </comp>
-    <comp ref="XR42">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PA11.44</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61896369</tstamp>
     </comp>
-    <comp ref="XR44">
+    <comp ref="XR26">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>61896B26</tstamp>
-    </comp>
-    <comp ref="XR45">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>61896DD8</tstamp>
-    </comp>
-    <comp ref="XR43">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PA10.43</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>618970FE</tstamp>
     </comp>
-    <comp ref="XRV3">
+    <comp ref="XR31">
       <value>TRACER2</value>
-      <libsource lib=".novac" part="TRACER2" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">MCU3V3</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER2" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6191CF17</tstamp>
     </comp>
     <comp ref="SW110">
       <value>RED</value>
+      <footprint>.demo32:SW_PUSH_6mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
@@ -808,18 +800,21 @@
     </comp>
     <comp ref="R120">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62086F8C</tstamp>
     </comp>
     <comp ref="R121">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62148B50</tstamp>
     </comp>
     <comp ref="SW112">
       <value>YELLOW</value>
+      <footprint>.demo32:SW_PUSH_6mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
@@ -827,12 +822,14 @@
     </comp>
     <comp ref="R123">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6217A5B9</tstamp>
     </comp>
     <comp ref="SW113">
       <value>BLUE</value>
+      <footprint>.demo32:SW_PUSH_6mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
@@ -840,149 +837,138 @@
     </comp>
     <comp ref="R124">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6217A5D9</tstamp>
     </comp>
     <comp ref="SW111">
       <value>GREEN</value>
+      <footprint>.demo32:SW_PUSH_6mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62148B46</tstamp>
     </comp>
-    <comp ref="SW6">
-      <value>BLACK</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6336843F</tstamp>
-    </comp>
-    <comp ref="SW4">
-      <value>BLACK</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>63368449</tstamp>
-    </comp>
-    <comp ref="SW3">
-      <value>BLACK</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>63368453</tstamp>
-    </comp>
-    <comp ref="SW5">
-      <value>BLACK</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6336845D</tstamp>
-    </comp>
     <comp ref="R125">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>635B3DFE</tstamp>
     </comp>
     <comp ref="R126">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>635B3E09</tstamp>
     </comp>
     <comp ref="R137">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>635B3E14</tstamp>
     </comp>
     <comp ref="R128">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>635B3E1F</tstamp>
     </comp>
-    <comp ref="XRV0">
+    <comp ref="XR32">
       <value>TRACER2</value>
-      <libsource lib=".novac" part="TRACER2" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">MCUGND</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER2" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>639D2D76</tstamp>
     </comp>
-    <comp ref="XR101">
+    <comp ref="XR27">
       <value>TRACER2</value>
-      <libsource lib=".novac" part="TRACER2" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">LIPO+</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER2" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>63BDE7DC</tstamp>
     </comp>
-    <comp ref="XR102">
+    <comp ref="XR28">
       <value>TRACER2</value>
-      <libsource lib=".novac" part="TRACER2" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">LIPO-</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER2" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>63BDF761</tstamp>
     </comp>
-    <comp ref="XR1081">
+    <comp ref="XR29">
       <value>TRACER2</value>
-      <libsource lib=".novac" part="TRACER2" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">EXTV+</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER2" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>641EE970</tstamp>
     </comp>
-    <comp ref="XR1082">
+    <comp ref="XR30">
       <value>TRACER2</value>
-      <libsource lib=".novac" part="TRACER2" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">EXTV-</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER2" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6436634B</tstamp>
     </comp>
-    <comp ref="TP22">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>64DACC8D</tstamp>
-    </comp>
-    <comp ref="TP23">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>64DAD061</tstamp>
-    </comp>
-    <comp ref="XR21">
+    <comp ref="XR1">
       <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PA2.16</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61788F5C</tstamp>
     </comp>
-    <comp ref="XR20">
-      <value>TRACER1</value>
-      <libsource lib=".novac" part="TRACER1" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>617886C4</tstamp>
-    </comp>
     <comp ref="R104">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60E3EA4C</tstamp>
     </comp>
     <comp ref="R106">
       <value>4.7K</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60E3C649</tstamp>
     </comp>
     <comp ref="R105">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60D60CC6</tstamp>
     </comp>
     <comp ref="R103">
       <value>220</value>
-      <libsource lib=".novac" part="R_US" description=""/>
+      <footprint>.demo32:R_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="R_US" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60D60CD0</tstamp>
     </comp>
     <comp ref="J103">
       <value>ANALOG_OUT1</value>
+      <footprint>.demo32:BNC_TEConnectivity_1634503_Vertical</footprint>
       <datasheet> ~</datasheet>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -990,6 +976,7 @@
     </comp>
     <comp ref="J104">
       <value>ANALOG_OUT2</value>
+      <footprint>.demo32:BNC_TEConnectivity_1634503_Vertical</footprint>
       <datasheet> ~</datasheet>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -997,289 +984,550 @@
     </comp>
     <comp ref="C106">
       <value>0.1uF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>64FF5BAB</tstamp>
     </comp>
     <comp ref="C104">
       <value>0.1uF</value>
-      <libsource lib=".novac" part="C_SMALL" description=""/>
+      <footprint>.demo32:C_0805_2012Metric</footprint>
+      <libsource lib=".demo32" part="C_SMALL" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6509E403</tstamp>
     </comp>
     <comp ref="TP33">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65342E28</tstamp>
     </comp>
     <comp ref="TP34">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65342E32</tstamp>
     </comp>
     <comp ref="TP62">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65398DD6</tstamp>
     </comp>
     <comp ref="TP61">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65398DE0</tstamp>
     </comp>
     <comp ref="TP35">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6544465C</tstamp>
     </comp>
     <comp ref="TP36">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65444666</tstamp>
     </comp>
     <comp ref="TP26">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65498DAA</tstamp>
     </comp>
     <comp ref="TP27">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65498DB4</tstamp>
     </comp>
     <comp ref="TP29">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65799788</tstamp>
     </comp>
     <comp ref="TP30">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65799792</tstamp>
     </comp>
     <comp ref="TP51">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65AB4CDA</tstamp>
     </comp>
     <comp ref="TP52">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65AB4CE4</tstamp>
     </comp>
     <comp ref="TP54">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65AB4CEE</tstamp>
     </comp>
     <comp ref="TP53">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65AB4CF8</tstamp>
     </comp>
     <comp ref="TP39">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65BC8C92</tstamp>
     </comp>
     <comp ref="TP40">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65BC8C9C</tstamp>
     </comp>
     <comp ref="TP41">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65BC8CA6</tstamp>
     </comp>
     <comp ref="TP8">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65F7162A</tstamp>
     </comp>
     <comp ref="TP9">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65F71634</tstamp>
     </comp>
     <comp ref="TP10">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65FD13CD</tstamp>
     </comp>
     <comp ref="TP11">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>65FD13D7</tstamp>
     </comp>
     <comp ref="TP24">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6602FEF2</tstamp>
     </comp>
     <comp ref="TP25">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6602FEFC</tstamp>
     </comp>
     <comp ref="TP37">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6602FF06</tstamp>
     </comp>
     <comp ref="TP38">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6602FF10</tstamp>
     </comp>
     <comp ref="TP46">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>663F3208</tstamp>
     </comp>
     <comp ref="TP49">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>663F3212</tstamp>
     </comp>
-    <comp ref="TP50">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>663F321C</tstamp>
-    </comp>
     <comp ref="TP56">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>663F3226</tstamp>
     </comp>
     <comp ref="TP2">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>66712026</tstamp>
     </comp>
     <comp ref="TP2A1">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>667772FE</tstamp>
     </comp>
     <comp ref="TP16">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6684255C</tstamp>
     </comp>
     <comp ref="TP17">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>66842566</tstamp>
     </comp>
     <comp ref="TP14">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>668A7BDD</tstamp>
     </comp>
     <comp ref="TP15">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>668A7BE7</tstamp>
     </comp>
     <comp ref="TPMV0">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointBlack</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>66C3B109</tstamp>
     </comp>
     <comp ref="TPMV3">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointRed</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>66AA27E8</tstamp>
     </comp>
     <comp ref="TP3V3">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointRed</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>670A9CB8</tstamp>
     </comp>
     <comp ref="TPGND1">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointBlack</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>671143AF</tstamp>
     </comp>
     <comp ref="TPVBUS5">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointOrange</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>67948F89</tstamp>
     </comp>
     <comp ref="TPVIN5">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointOrange</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>679B44D9</tstamp>
     </comp>
     <comp ref="TPVLIPO1">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointOrange</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>67A1DF6F</tstamp>
     </comp>
     <comp ref="TPGLIPO1">
       <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>67BC0B24</tstamp>
     </comp>
     <comp ref="TPVEXT1">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointOrange</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>67CF9C70</tstamp>
     </comp>
     <comp ref="TPGEXT1">
-      <value>TestPoint</value>
-      <libsource lib=".novac" part="TestPoint" description=""/>
+      <value>TestPointBlack</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>67CFA36B</tstamp>
     </comp>
+    <comp ref="J109">
+      <value>SPI_PORT_1x6</value>
+      <footprint>.demo32:TE_640454-6</footprint>
+      <libsource lib=".demo32" part="IO_JACK_M06" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D4E51B</tstamp>
+    </comp>
+    <comp ref="XR2">
+      <value>TRACER1</value>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PA4.20</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6140527D</tstamp>
+    </comp>
+    <comp ref="XR3">
+      <value>TRACER1</value>
+      <footprint>.demo32:MODULE_TRACER</footprint>
+      <fields>
+        <field name="Field4">PA6.22</field>
+      </fields>
+      <libsource lib=".demo32" part="TRACER1" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61474B4B</tstamp>
+    </comp>
+    <comp ref="TP22">
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C43013</tstamp>
+    </comp>
+    <comp ref="TP23">
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C4301D</tstamp>
+    </comp>
+    <comp ref="TP20">
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C43027</tstamp>
+    </comp>
+    <comp ref="TP21">
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C43031</tstamp>
+    </comp>
+    <comp ref="TP28">
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>622E8BC3</tstamp>
+    </comp>
+    <comp ref="TP57">
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>622E8BCD</tstamp>
+    </comp>
+    <comp ref="TP58">
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>622E8BD7</tstamp>
+    </comp>
+    <comp ref="TP59">
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>622E8BE1</tstamp>
+    </comp>
+    <comp ref="SW4">
+      <value>BLACK</value>
+      <footprint>.demo32:SW_PUSH_6mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>63368449</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>BLACK</value>
+      <footprint>.demo32:SW_PUSH_6mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>63368453</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>LIPO_1x2</value>
+      <footprint>.demo32:TE_640454-2-FLIP</footprint>
+      <libsource lib=".demo32" part="IO_JACK_M02" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60B4C37C</tstamp>
+    </comp>
+    <comp ref="TP50">
+      <value>TestPointWhite</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>663F321C</tstamp>
+    </comp>
+    <comp ref="SW102">
+      <value>USER</value>
+      <footprint>.demo32:RotaryEncoder_CTS_11CE</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib=".demo32" part="RotaryEncoder_Switch" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6179CC1D</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>MCP1703</value>
+      <footprint>.demo32:SOT-223-3_TabPin2</footprint>
+      <libsource lib=".demo32" part="MCP1703" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60BBC6BD</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>.demo32:MountingHole_3.2mm_M3_ISO7380_Pad</footprint>
+      <libsource lib=".demo32" part="MountingHole_Pad" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D04BCE</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>.demo32:MountingHole_3.2mm_M3_ISO7380_Pad</footprint>
+      <libsource lib=".demo32" part="MountingHole_Pad" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D0547C</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>.demo32:MountingHole_3.2mm_M3_ISO7380_Pad</footprint>
+      <libsource lib=".demo32" part="MountingHole_Pad" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D05D7B</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole_Pad</value>
+      <footprint>.demo32:MountingHole_3.2mm_M3_ISO7380_Pad</footprint>
+      <libsource lib=".demo32" part="MountingHole_Pad" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D060A8</tstamp>
+    </comp>
+    <comp ref="LOGO1">
+      <value>Logo_Open_Hardware_Large</value>
+      <footprint>.demo32:OSHW-Logo2_7.3x6mm_SilkScreen</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib=".demo32" part="Logo_Open_Hardware_Large" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60F636FD</tstamp>
+    </comp>
+    <comp ref="BT101">
+      <value>2032_SOCK</value>
+      <footprint>.demo32:BatteryHolder_Keystone_1059_1x2032</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib=".demo32" part="Battery_Cell" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60EADC08</tstamp>
+    </comp>
+    <comp ref="TPGND2">
+      <value>TestPointBlack</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B0A628</tstamp>
+    </comp>
+    <comp ref="TPGND3">
+      <value>TestPointBlack</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B839F0</tstamp>
+    </comp>
+    <comp ref="TPGND4">
+      <value>TestPointBlack</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61BFC19E</tstamp>
+    </comp>
+    <comp ref="TPGND5">
+      <value>TestPointBlack</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61BFC1A9</tstamp>
+    </comp>
+    <comp ref="TPGND6">
+      <value>TestPointBlack</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C75C1A</tstamp>
+    </comp>
+    <comp ref="TPGND7">
+      <value>TestPointBlack</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C75C25</tstamp>
+    </comp>
+    <comp ref="TPGND8">
+      <value>TestPointBlack</value>
+      <footprint>.demo32:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <libsource lib=".demo32" part="TestPoint" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C75C30</tstamp>
+    </comp>
   </components>
   <libparts>
-    <libpart lib=".novac" part="ASSY_OLED_910MILS_128x32_I2C">
+    <libpart lib=".demo32" part="ASSY_OLED_910MILS_128x32_I2C">
       <fields>
         <field name="Reference">A</field>
         <field name="Value">ASSY_OLED_910MILS_128x32_I2C</field>
@@ -1291,19 +1539,18 @@
         <pin num="4" name="SDA" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="Battery_Cell">
-      <description>Single-cell battery</description>
-      <docs>~</docs>
+    <libpart lib=".demo32" part="Battery_Cell">
       <fields>
         <field name="Reference">BT</field>
         <field name="Value">Battery_Cell</field>
       </fields>
       <pins>
-        <pin num="1" name="+" type="passive"/>
-        <pin num="2" name="-" type="passive"/>
+        <pin num="1" name="-" type="passive"/>
+        <pin num="2" name="+" type="passive"/>
+        <pin num="3" name="+" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="C2_SMALL">
+    <libpart lib=".demo32" part="C2_SMALL">
       <footprints>
         <fp>CP_*</fp>
       </footprints>
@@ -1316,7 +1563,7 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="C_SMALL">
+    <libpart lib=".demo32" part="C_SMALL">
       <footprints>
         <fp>C_*</fp>
       </footprints>
@@ -1329,7 +1576,7 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="DIODE">
+    <libpart lib=".demo32" part="DIODE">
       <footprints>
         <fp>TO-???*</fp>
         <fp>*_Diode_*</fp>
@@ -1345,7 +1592,7 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="G6K-2">
+    <libpart lib=".demo32" part="G6K-2">
       <footprints>
         <fp>Relay*DPDT*Omron*G6K?2*</fp>
       </footprints>
@@ -1364,7 +1611,7 @@
         <pin num="8" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="IO_JACK_M02">
+    <libpart lib=".demo32" part="IO_JACK_M02">
       <footprints>
         <fp>Connector*:*_1x??_*</fp>
       </footprints>
@@ -1377,7 +1624,7 @@
         <pin num="2" name="Pin_2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="IO_JACK_M04">
+    <libpart lib=".demo32" part="IO_JACK_M04">
       <footprints>
         <fp>Connector*:*_1x??_*</fp>
       </footprints>
@@ -1392,13 +1639,30 @@
         <pin num="4" name="Pin_4" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="IO_JACK_M08">
+    <libpart lib=".demo32" part="IO_JACK_M06">
       <footprints>
         <fp>Connector*:*_1x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">IO_JACK_M08</field>
+        <field name="Value">IO_JACK_M06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib=".demo32" part="IO_JACK_M09">
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">IO_JACK_M09</field>
       </fields>
       <pins>
         <pin num="1" name="~" type="passive"/>
@@ -1409,9 +1673,10 @@
         <pin num="6" name="~" type="passive"/>
         <pin num="7" name="~" type="passive"/>
         <pin num="8" name="~" type="passive"/>
+        <pin num="9" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="LED">
+    <libpart lib=".demo32" part="LED">
       <footprints>
         <fp>LED*</fp>
         <fp>LED_SMD:*</fp>
@@ -1426,7 +1691,13 @@
         <pin num="2" name="K" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="MCP1703">
+    <libpart lib=".demo32" part="Logo_Open_Hardware_Large">
+      <fields>
+        <field name="Reference">#LOGO</field>
+        <field name="Value">Logo_Open_Hardware_Large</field>
+      </fields>
+    </libpart>
+    <libpart lib=".demo32" part="MCP1703">
       <footprints>
         <fp>DFN*1EP*4x4mm*P0.8mm*</fp>
       </footprints>
@@ -1435,13 +1706,12 @@
         <field name="Value">MCP1703</field>
       </fields>
       <pins>
-        <pin num="1" name="OUT" type="passive"/>
-        <pin num="4" name="GND" type="passive"/>
-        <pin num="8" name="IN" type="passive"/>
-        <pin num="9" name="GND" type="passive"/>
+        <pin num="1" name="IN" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="MIC2005A-1YM5">
+    <libpart lib=".demo32" part="MIC2005A-1YM5">
       <footprints>
         <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
       </footprints>
@@ -1457,9 +1727,7 @@
         <pin num="5" name="OUT" type="power_out"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="MMA7660">
-      <description>3-Axis 10-bit Digital Accelerometer with I2C interface</description>
-      <docs>http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8653FC.pdf</docs>
+    <libpart lib=".demo32" part="MMA7660">
       <footprints>
         <fp>DFN*2x2mm*P0.4mm*</fp>
       </footprints>
@@ -1481,8 +1749,7 @@
         <pin num="10" name="RESD10" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="MR25H10">
-      <description>Magnetoresistive memory with SPI interface</description>
+    <libpart lib=".demo32" part="MR25H10">
       <footprints>
         <fp>SOIC*3.9x5.05mm*P1.27mm*</fp>
         <fp>*SON*2x3mm*P0.50mm*</fp>
@@ -1502,9 +1769,7 @@
         <pin num="8" name="VDD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="Micro_SD_Card_Det">
-      <description>Micro SD Card Socket with card detection pins</description>
-      <docs>https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&amp;item_id=195&amp;is_series=1</docs>
+    <libpart lib=".demo32" part="Micro_SD_Card_Det">
       <footprints>
         <fp>microSD*</fp>
       </footprints>
@@ -1526,7 +1791,19 @@
         <pin num="11" name="SHIELD" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="R_US">
+    <libpart lib=".demo32" part="MountingHole_Pad">
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib=".demo32" part="R_US">
       <footprints>
         <fp>R_*</fp>
       </footprints>
@@ -1539,9 +1816,23 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="STM32F405RGTx">
-      <description>ARM Cortex-M4 MCU, 1024KB flash, 128KB RAM, 168MHz, 1.8-3.6V, 51 GPIO, LQFP-64</description>
-      <docs>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf</docs>
+    <libpart lib=".demo32" part="RotaryEncoder_Switch">
+      <footprints>
+        <fp>RotaryEncoder*Switch*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">RotaryEncoder_Switch</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="B" name="B" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+        <pin num="S1" name="S1" type="passive"/>
+        <pin num="S2" name="S2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib=".demo32" part="STM32F405RGTx">
       <footprints>
         <fp>LQFP*10x10mm*P0.5mm*</fp>
       </footprints>
@@ -1570,10 +1861,10 @@
         <pin num="17" name="PA3" type="BiDi"/>
         <pin num="18" name="VSS" type="power_in"/>
         <pin num="19" name="VDD" type="power_in"/>
-        <pin num="20" name="DAC1/PA4" type="BiDi"/>
-        <pin num="21" name="DAC2/PA5" type="BiDi"/>
-        <pin num="22" name="PA6" type="BiDi"/>
-        <pin num="23" name="PA7" type="BiDi"/>
+        <pin num="20" name="~SS1~/DAC1/PA4" type="BiDi"/>
+        <pin num="21" name="SCK1/DAC2/PA5" type="BiDi"/>
+        <pin num="22" name="MISO1/_____/PA6" type="BiDi"/>
+        <pin num="23" name="MOSI1/_____/PA7" type="BiDi"/>
         <pin num="24" name="PC4" type="BiDi"/>
         <pin num="25" name="PC5" type="BiDi"/>
         <pin num="26" name="PB0" type="BiDi"/>
@@ -1617,7 +1908,7 @@
         <pin num="64" name="VDD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="TRACER1">
+    <libpart lib=".demo32" part="TRACER1">
       <footprints>
         <fp>DIP*W7.62mm*</fp>
         <fp>DIP*W10.16mm*</fp>
@@ -1630,9 +1921,11 @@
       <pins>
         <pin num="1" name="~" type="passive"/>
         <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="TRACER2">
+    <libpart lib=".demo32" part="TRACER2">
       <footprints>
         <fp>DIP*W7.62mm*</fp>
         <fp>DIP*W10.16mm*</fp>
@@ -1649,7 +1942,7 @@
         <pin num="4" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="TestPoint">
+    <libpart lib=".demo32" part="TestPoint">
       <footprints>
         <fp>Pin*</fp>
         <fp>Test*</fp>
@@ -1662,7 +1955,7 @@
         <pin num="1" name="1" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="ULN2003">
+    <libpart lib=".demo32" part="ULN2003">
       <aliases>
         <alias>ULN2003A</alias>
         <alias>ULN2002</alias>
@@ -1700,7 +1993,7 @@
         <pin num="16" name="O1" type="openCol"/>
       </pins>
     </libpart>
-    <libpart lib=".novac" part="USB_B_Micro">
+    <libpart lib=".demo32" part="USB_B_Micro">
       <aliases>
         <alias>USB_B_Mini</alias>
       </aliases>
@@ -1819,8 +2112,8 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical=".novac">
-      <uri>/Users/rclott/root/files/projs/novac/eda/demo32/../novac.lib</uri>
+    <library logical=".demo32">
+      <uri>/Users/rclott/root/files/projs/novac/eda/demo32/demo32.lib</uri>
     </library>
     <library logical="Connector">
       <uri>/files/tools/kicad-libs/symbols/Connector.lib</uri>
@@ -1839,810 +2132,840 @@
     <net code="1" name="GND">
       <node ref="J9" pin="5"/>
       <node ref="J9" pin="6"/>
-      <node ref="J8" pin="9"/>
-      <node ref="J8" pin="6"/>
-      <node ref="J8" pin="11"/>
       <node ref="R22" pin="2"/>
       <node ref="U3" pin="1"/>
       <node ref="U3" pin="10"/>
       <node ref="U3" pin="2"/>
       <node ref="U3" pin="4"/>
-      <node ref="XR1082" pin="4"/>
       <node ref="U3" pin="8"/>
-      <node ref="XR1082" pin="2"/>
       <node ref="U4" pin="2"/>
-      <node ref="XR102" pin="4"/>
-      <node ref="XR102" pin="2"/>
-      <node ref="U102" pin="8"/>
       <node ref="TPGND1" pin="1"/>
+      <node ref="TPGND8" pin="1"/>
+      <node ref="TPGND7" pin="1"/>
+      <node ref="TPGND6" pin="1"/>
+      <node ref="J106" pin="9"/>
+      <node ref="TPGND5" pin="1"/>
+      <node ref="TPGND4" pin="1"/>
+      <node ref="TPGND3" pin="1"/>
+      <node ref="TPGND2" pin="1"/>
+      <node ref="J109" pin="6"/>
       <node ref="R109" pin="2"/>
-      <node ref="XRV0" pin="3"/>
-      <node ref="XRV0" pin="1"/>
-      <node ref="C6" pin="2"/>
-      <node ref="U2" pin="4"/>
-      <node ref="U2" pin="9"/>
+      <node ref="U102" pin="8"/>
+      <node ref="BT101" pin="1"/>
       <node ref="C17" pin="2"/>
       <node ref="C16" pin="2"/>
-      <node ref="SW5" pin="1"/>
+      <node ref="SW110" pin="1"/>
+      <node ref="SW112" pin="1"/>
+      <node ref="SW113" pin="1"/>
+      <node ref="SW111" pin="1"/>
       <node ref="D2" pin="2"/>
-      <node ref="SW3" pin="1"/>
-      <node ref="SW4" pin="1"/>
-      <node ref="SW6" pin="1"/>
+      <node ref="H4" pin="1"/>
       <node ref="D3" pin="2"/>
+      <node ref="H3" pin="1"/>
       <node ref="D4" pin="2"/>
+      <node ref="H2" pin="1"/>
       <node ref="D5" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C20" pin="2"/>
-      <node ref="C19" pin="2"/>
+      <node ref="H1" pin="1"/>
       <node ref="R15" pin="2"/>
-      <node ref="C12" pin="2"/>
-      <node ref="C11" pin="2"/>
+      <node ref="SW4" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="SW3" pin="1"/>
+      <node ref="J107" pin="9"/>
       <node ref="C13" pin="1"/>
       <node ref="SW1" pin="1"/>
-      <node ref="SW111" pin="1"/>
-      <node ref="SW2" pin="1"/>
       <node ref="C104" pin="1"/>
       <node ref="R20" pin="2"/>
-      <node ref="R104" pin="2"/>
-      <node ref="R106" pin="2"/>
-      <node ref="SW113" pin="1"/>
-      <node ref="A101" pin="1"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C9" pin="1"/>
-      <node ref="J105" pin="4"/>
-      <node ref="SW112" pin="1"/>
-      <node ref="SW110" pin="1"/>
-      <node ref="C18" pin="2"/>
+      <node ref="XR32" pin="1"/>
+      <node ref="XR32" pin="3"/>
       <node ref="R14" pin="2"/>
-      <node ref="BT101" pin="2"/>
+      <node ref="XR28" pin="2"/>
+      <node ref="XR28" pin="4"/>
+      <node ref="J8" pin="9"/>
+      <node ref="J8" pin="6"/>
+      <node ref="J8" pin="11"/>
+      <node ref="C18" pin="2"/>
+      <node ref="XR30" pin="2"/>
+      <node ref="XR30" pin="4"/>
       <node ref="C8" pin="1"/>
+      <node ref="A101" pin="1"/>
+      <node ref="J105" pin="4"/>
+      <node ref="SW102" pin="S2"/>
       <node ref="U101" pin="4"/>
-      <node ref="C106" pin="1"/>
-      <node ref="J104" pin="2"/>
-      <node ref="J103" pin="2"/>
-      <node ref="J101" pin="2"/>
+      <node ref="R104" pin="2"/>
       <node ref="J102" pin="2"/>
+      <node ref="J101" pin="2"/>
+      <node ref="R106" pin="2"/>
+      <node ref="J103" pin="2"/>
+      <node ref="J104" pin="2"/>
+      <node ref="C106" pin="1"/>
+      <node ref="SW102" pin="C"/>
     </net>
     <net code="2" name="Net-(C1-Pad1)">
       <node ref="Y1" pin="1"/>
+      <node ref="U1" pin="6"/>
       <node ref="C1" pin="1"/>
-      <node ref="XR6" pin="1"/>
     </net>
     <net code="3" name="Net-(U4-Pad4)">
       <node ref="U4" pin="4"/>
     </net>
     <net code="4" name="Net-(R10-Pad1)">
-      <node ref="XR42" pin="1"/>
+      <node ref="XR25" pin="3"/>
       <node ref="R10" pin="1"/>
     </net>
     <net code="5" name="Net-(R1-Pad1)">
-      <node ref="XR44" pin="1"/>
+      <node ref="XR25" pin="1"/>
       <node ref="R1" pin="1"/>
     </net>
     <net code="6" name="Net-(R2-Pad1)">
-      <node ref="XR45" pin="1"/>
+      <node ref="XR26" pin="3"/>
       <node ref="R2" pin="1"/>
     </net>
     <net code="7" name="Net-(R16-Pad1)">
-      <node ref="XR43" pin="1"/>
+      <node ref="XR26" pin="1"/>
       <node ref="R16" pin="1"/>
     </net>
     <net code="8" name="Net-(C2-Pad1)">
-      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="5"/>
       <node ref="Y1" pin="2"/>
-      <node ref="XR5" pin="1"/>
+      <node ref="C2" pin="1"/>
     </net>
     <net code="9" name="Net-(C11-Pad1)">
-      <node ref="XR4" pin="1"/>
       <node ref="C11" pin="1"/>
       <node ref="Y2" pin="1"/>
+      <node ref="U1" pin="4"/>
     </net>
     <net code="10" name="Net-(C12-Pad1)">
       <node ref="Y2" pin="2"/>
       <node ref="C12" pin="1"/>
-      <node ref="XR3" pin="1"/>
+      <node ref="U1" pin="3"/>
     </net>
-    <net code="11" name="Net-(R17-Pad2)">
-      <node ref="R17" pin="2"/>
-      <node ref="SW2" pin="2"/>
-    </net>
-    <net code="12" name="Net-(TP22-Pad1)">
-      <node ref="U1" pin="22"/>
-      <node ref="TP22" pin="1"/>
-    </net>
-    <net code="13" name="Net-(TP23-Pad1)">
-      <node ref="U1" pin="23"/>
-      <node ref="TP23" pin="1"/>
-    </net>
-    <net code="14" name="Net-(U1-Pad28)">
-      <node ref="XR28" pin="1"/>
-      <node ref="U1" pin="28"/>
-    </net>
-    <net code="15" name="Net-(U1-Pad5)">
-      <node ref="U1" pin="5"/>
-      <node ref="XR5" pin="2"/>
-    </net>
-    <net code="16" name="Net-(R17-Pad1)">
-      <node ref="R17" pin="1"/>
-      <node ref="U1" pin="55"/>
-    </net>
-    <net code="17" name="Net-(U1-Pad57)">
-      <node ref="U1" pin="57"/>
-      <node ref="XR57" pin="1"/>
-    </net>
-    <net code="18" name="Net-(U1-Pad58)">
-      <node ref="U1" pin="58"/>
-      <node ref="XR58" pin="1"/>
-    </net>
-    <net code="19" name="Net-(U1-Pad59)">
-      <node ref="U1" pin="59"/>
-      <node ref="XR59" pin="1"/>
-    </net>
-    <net code="20" name="Net-(R15-Pad1)">
-      <node ref="U1" pin="60"/>
-      <node ref="SW103" pin="2"/>
+    <net code="11" name="Net-(R15-Pad1)">
       <node ref="R15" pin="1"/>
+      <node ref="SW103" pin="2"/>
+      <node ref="U1" pin="60"/>
     </net>
-    <net code="21" name="Net-(C13-Pad2)">
-      <node ref="SW1" pin="2"/>
-      <node ref="U1" pin="7"/>
-      <node ref="C13" pin="2"/>
+    <net code="12" name="Net-(C13-Pad2)">
       <node ref="R3" pin="2"/>
+      <node ref="U1" pin="7"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="C13" pin="2"/>
     </net>
-    <net code="22" name="VBAT">
-      <node ref="U1" pin="1"/>
-      <node ref="C8" pin="2"/>
+    <net code="13" name="VBAT">
       <node ref="R19" pin="1"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U1" pin="1"/>
     </net>
-    <net code="23" name="+3V3A">
-      <node ref="C9" pin="2"/>
+    <net code="14" name="+3V3A">
       <node ref="C10" pin="1"/>
       <node ref="L1" pin="2"/>
       <node ref="U1" pin="13"/>
+      <node ref="C9" pin="2"/>
     </net>
-    <net code="24" name="Net-(J107-Pad8)">
-      <node ref="K101" pin="2"/>
-      <node ref="J107" pin="8"/>
+    <net code="15" name="Net-(U102-Pad10)">
+      <node ref="U102" pin="10"/>
     </net>
-    <net code="25" name="Net-(J107-Pad5)">
-      <node ref="J107" pin="5"/>
-      <node ref="K101" pin="4"/>
+    <net code="16" name="Net-(U102-Pad11)">
+      <node ref="U102" pin="11"/>
     </net>
-    <net code="26" name="Net-(J107-Pad1)">
-      <node ref="J107" pin="1"/>
-      <node ref="K101" pin="5"/>
-    </net>
-    <net code="27" name="Net-(J107-Pad4)">
-      <node ref="K101" pin="7"/>
-      <node ref="J107" pin="4"/>
-    </net>
-    <net code="28" name="Net-(J107-Pad2)">
-      <node ref="K101" pin="6"/>
-      <node ref="J107" pin="2"/>
-      <node ref="J107" pin="3"/>
-    </net>
-    <net code="29" name="Net-(J107-Pad6)">
-      <node ref="K101" pin="3"/>
-      <node ref="J107" pin="7"/>
-      <node ref="J107" pin="6"/>
-    </net>
-    <net code="30" name="Net-(U102-Pad1)">
-      <node ref="U102" pin="1"/>
-    </net>
-    <net code="31" name="Net-(U102-Pad12)">
+    <net code="17" name="Net-(U102-Pad12)">
       <node ref="U102" pin="12"/>
     </net>
-    <net code="32" name="Net-(U102-Pad13)">
+    <net code="18" name="Net-(U102-Pad13)">
       <node ref="U102" pin="13"/>
     </net>
-    <net code="33" name="Net-(U102-Pad14)">
+    <net code="19" name="Net-(U102-Pad14)">
       <node ref="U102" pin="14"/>
     </net>
-    <net code="34" name="Net-(U102-Pad15)">
-      <node ref="U102" pin="15"/>
-    </net>
-    <net code="35" name="Net-(U102-Pad16)">
+    <net code="20" name="/COIL_DRIVE">
       <node ref="U102" pin="16"/>
+      <node ref="U102" pin="15"/>
+      <node ref="XR19" pin="3"/>
+      <node ref="TP2A1" pin="1"/>
     </net>
-    <net code="36" name="Net-(U102-Pad2)">
+    <net code="21" name="/RELAY">
+      <node ref="XR19" pin="2"/>
+      <node ref="R109" pin="1"/>
+      <node ref="TP2" pin="1"/>
+      <node ref="U102" pin="1"/>
       <node ref="U102" pin="2"/>
     </net>
-    <net code="37" name="Net-(U102-Pad3)">
+    <net code="22" name="Net-(U102-Pad3)">
       <node ref="U102" pin="3"/>
     </net>
-    <net code="38" name="Net-(U102-Pad4)">
+    <net code="23" name="Net-(U102-Pad4)">
       <node ref="U102" pin="4"/>
     </net>
-    <net code="39" name="Net-(U102-Pad5)">
+    <net code="24" name="Net-(U102-Pad5)">
       <node ref="U102" pin="5"/>
     </net>
-    <net code="40" name="/USB_ID">
+    <net code="25" name="Net-(U102-Pad6)">
+      <node ref="U102" pin="6"/>
+    </net>
+    <net code="26" name="Net-(U102-Pad7)">
+      <node ref="U102" pin="7"/>
+    </net>
+    <net code="27" name="/MUSB_VBUS">
+      <node ref="XR25" pin="4"/>
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="28" name="/MUSB_DP">
+      <node ref="U1" pin="45"/>
+      <node ref="XR26" pin="4"/>
+    </net>
+    <net code="29" name="/MUSB_ID">
+      <node ref="U1" pin="43"/>
+      <node ref="XR26" pin="2"/>
+    </net>
+    <net code="30" name="/USB_ID">
       <node ref="R16" pin="2"/>
       <node ref="J9" pin="4"/>
     </net>
-    <net code="41" name="/USB_DP">
+    <net code="31" name="/USB_DP">
       <node ref="R2" pin="2"/>
       <node ref="J9" pin="3"/>
     </net>
-    <net code="42" name="/USB_DM">
+    <net code="32" name="/USB_DM">
       <node ref="R1" pin="2"/>
       <node ref="J9" pin="2"/>
     </net>
-    <net code="43" name="/VCAP1">
-      <node ref="U1" pin="31"/>
+    <net code="33" name="/VCAP1">
       <node ref="C19" pin="1"/>
+      <node ref="U1" pin="31"/>
     </net>
-    <net code="44" name="/VCAP2">
+    <net code="34" name="/VCAP2">
       <node ref="U1" pin="47"/>
       <node ref="C20" pin="1"/>
     </net>
-    <net code="45" name="Net-(XR30-Pad2)">
-      <node ref="XR30" pin="2"/>
-    </net>
-    <net code="46" name="Net-(BT101-Pad1)">
-      <node ref="BT101" pin="1"/>
+    <net code="35" name="Net-(BT101-Pad2)">
+      <node ref="BT101" pin="3"/>
       <node ref="R19" pin="2"/>
+      <node ref="BT101" pin="2"/>
     </net>
-    <net code="47" name="/MEXP0">
+    <net code="36" name="/MEXP0">
       <node ref="U1" pin="8"/>
-      <node ref="XR8" pin="1"/>
+      <node ref="XR15" pin="1"/>
     </net>
-    <net code="48" name="/MEXP1">
+    <net code="37" name="/MEXP1">
       <node ref="U1" pin="9"/>
-      <node ref="XR9" pin="1"/>
+      <node ref="XR15" pin="3"/>
     </net>
-    <net code="49" name="/MEXP2">
+    <net code="38" name="/MEXP2">
       <node ref="U1" pin="10"/>
-      <node ref="XR10" pin="1"/>
+      <node ref="XR16" pin="1"/>
     </net>
-    <net code="50" name="/MEXP3">
-      <node ref="XR11" pin="1"/>
+    <net code="39" name="/MEXP3">
+      <node ref="XR16" pin="3"/>
       <node ref="U1" pin="11"/>
     </net>
-    <net code="51" name="/MEXP4">
-      <node ref="XR24" pin="1"/>
+    <net code="40" name="/MEXP4">
+      <node ref="XR17" pin="1"/>
       <node ref="U1" pin="24"/>
     </net>
-    <net code="52" name="/MEXP5">
+    <net code="41" name="/MEXP5">
+      <node ref="XR17" pin="3"/>
       <node ref="U1" pin="25"/>
-      <node ref="XR25" pin="1"/>
     </net>
-    <net code="53" name="/MEXP6">
+    <net code="42" name="/MEXP6">
       <node ref="U1" pin="37"/>
-      <node ref="XR37" pin="1"/>
+      <node ref="XR18" pin="1"/>
     </net>
-    <net code="54" name="/MEXP7">
-      <node ref="XR38" pin="1"/>
+    <net code="43" name="/MEXP7">
       <node ref="U1" pin="38"/>
+      <node ref="XR18" pin="3"/>
     </net>
-    <net code="55" name="/EXP0">
+    <net code="44" name="/EXP0">
       <node ref="R110" pin="1"/>
       <node ref="J106" pin="1"/>
     </net>
-    <net code="56" name="/EXP1">
-      <node ref="R111" pin="1"/>
+    <net code="45" name="/EXP1">
       <node ref="J106" pin="2"/>
+      <node ref="R111" pin="1"/>
     </net>
-    <net code="57" name="/EXP2">
+    <net code="46" name="/EXP2">
       <node ref="R112" pin="1"/>
       <node ref="J106" pin="3"/>
     </net>
-    <net code="58" name="/EXP3">
+    <net code="47" name="/EXP3">
       <node ref="R113" pin="1"/>
       <node ref="J106" pin="4"/>
     </net>
-    <net code="59" name="/EXP4">
-      <node ref="R114" pin="1"/>
+    <net code="48" name="/EXP4">
       <node ref="J106" pin="5"/>
+      <node ref="R114" pin="1"/>
     </net>
-    <net code="60" name="/EXP5">
-      <node ref="R115" pin="1"/>
+    <net code="49" name="/EXP5">
       <node ref="J106" pin="6"/>
+      <node ref="R115" pin="1"/>
     </net>
-    <net code="61" name="/EXP6">
+    <net code="50" name="/EXP6">
       <node ref="R116" pin="1"/>
       <node ref="J106" pin="7"/>
     </net>
-    <net code="62" name="/EXP7">
-      <node ref="J106" pin="8"/>
+    <net code="51" name="/EXP7">
       <node ref="R117" pin="1"/>
+      <node ref="J106" pin="8"/>
     </net>
-    <net code="63" name="/MMRAM_CLK">
+    <net code="52" name="/MMRAM_CLK">
       <node ref="U1" pin="34"/>
-      <node ref="XR34" pin="1"/>
+      <node ref="XR8" pin="1"/>
     </net>
-    <net code="64" name="/MMRAM_~CS">
+    <net code="53" name="/MMRAM_~CS">
       <node ref="U1" pin="33"/>
-      <node ref="XR33" pin="1"/>
+      <node ref="XR8" pin="3"/>
     </net>
-    <net code="65" name="/MMRAM_SO">
+    <net code="54" name="/MMRAM_SO">
       <node ref="U1" pin="35"/>
-      <node ref="XR35" pin="1"/>
+      <node ref="XR9" pin="1"/>
     </net>
-    <net code="66" name="/MMRAM_SI">
+    <net code="55" name="/MMRAM_SI">
+      <node ref="XR9" pin="3"/>
       <node ref="U1" pin="36"/>
-      <node ref="XR36" pin="1"/>
     </net>
-    <net code="67" name="/MMRAM_~WP">
+    <net code="56" name="/MMRAM_~WP">
       <node ref="U1" pin="26"/>
-      <node ref="XR26" pin="1"/>
+      <node ref="XR10" pin="3"/>
     </net>
-    <net code="68" name="/MRAM_~WP">
-      <node ref="U101" pin="3"/>
-      <node ref="TP26" pin="1"/>
-      <node ref="XR26" pin="2"/>
-    </net>
-    <net code="69" name="/MMRAM_~HOLD">
-      <node ref="XR27" pin="1"/>
+    <net code="57" name="/MMRAM_~HOLD">
       <node ref="U1" pin="27"/>
+      <node ref="XR10" pin="1"/>
     </net>
-    <net code="70" name="/MRAM_~HOLD">
-      <node ref="U101" pin="7"/>
+    <net code="58" name="/MRAM_~HOLD">
       <node ref="TP27" pin="1"/>
-      <node ref="XR27" pin="2"/>
+      <node ref="XR10" pin="2"/>
+      <node ref="U101" pin="7"/>
     </net>
-    <net code="71" name="/MSDIO_D2">
-      <node ref="XR51" pin="1"/>
+    <net code="59" name="/MRAM_~WP">
+      <node ref="XR10" pin="4"/>
+      <node ref="TP26" pin="1"/>
+      <node ref="U101" pin="3"/>
+    </net>
+    <net code="60" name="/MSDIO_D2">
+      <node ref="XR11" pin="1"/>
       <node ref="U1" pin="51"/>
     </net>
-    <net code="72" name="/MSDIO_D3">
-      <node ref="XR52" pin="1"/>
+    <net code="61" name="/MSDIO_D3">
       <node ref="U1" pin="52"/>
+      <node ref="XR11" pin="3"/>
     </net>
-    <net code="73" name="/MSDIO_CMD">
+    <net code="62" name="/MSDIO_CMD">
       <node ref="U1" pin="54"/>
-      <node ref="XR54" pin="1"/>
+      <node ref="XR12" pin="1"/>
     </net>
-    <net code="74" name="/MSDIO_CLK">
+    <net code="63" name="/MSDIO_CLK">
       <node ref="U1" pin="53"/>
-      <node ref="XR53" pin="1"/>
+      <node ref="XR12" pin="3"/>
     </net>
-    <net code="75" name="/MSDIO_D0">
-      <node ref="XR39" pin="1"/>
+    <net code="64" name="/MSDIO_D0">
+      <node ref="XR13" pin="1"/>
       <node ref="U1" pin="39"/>
     </net>
-    <net code="76" name="/MSDIO_D1">
+    <net code="65" name="/MSDIO_D1">
       <node ref="U1" pin="40"/>
-      <node ref="XR40" pin="1"/>
+      <node ref="XR13" pin="3"/>
     </net>
-    <net code="77" name="/MSDIO_SW">
+    <net code="66" name="/MSDIO_SW">
+      <node ref="XR14" pin="1"/>
       <node ref="U1" pin="41"/>
-      <node ref="XR41" pin="1"/>
     </net>
-    <net code="78" name="/MRELAY">
+    <net code="67" name="/MRELAY">
+      <node ref="XR19" pin="1"/>
       <node ref="U1" pin="2"/>
-      <node ref="XR2" pin="1"/>
     </net>
-    <net code="79" name="/MLED_RED">
-      <node ref="XR46" pin="1"/>
+    <net code="68" name="/MLED_RED">
+      <node ref="XR20" pin="1"/>
       <node ref="U1" pin="46"/>
     </net>
-    <net code="80" name="/MLED_GREEN">
+    <net code="69" name="/MLED_GREEN">
+      <node ref="XR20" pin="3"/>
       <node ref="U1" pin="49"/>
-      <node ref="XR49" pin="1"/>
     </net>
-    <net code="81" name="/MLED_YELLOW">
+    <net code="70" name="/MLED_YELLOW">
+      <node ref="XR21" pin="1"/>
       <node ref="U1" pin="50"/>
-      <node ref="XR50" pin="1"/>
     </net>
-    <net code="82" name="/MLED_BLUE">
-      <node ref="XR56" pin="1"/>
+    <net code="71" name="/MLED_BLUE">
       <node ref="U1" pin="56"/>
+      <node ref="XR21" pin="3"/>
     </net>
-    <net code="83" name="/COIL">
+    <net code="72" name="/COIL">
       <node ref="K101" pin="8"/>
-      <node ref="XR1021" pin="2"/>
+      <node ref="XR19" pin="4"/>
     </net>
-    <net code="84" name="Net-(R14-Pad1)">
-      <node ref="R14" pin="1"/>
-      <node ref="XR28" pin="2"/>
-      <node ref="U3" pin="5"/>
-    </net>
-    <net code="85" name="Net-(R20-Pad1)">
-      <node ref="U3" pin="3"/>
-      <node ref="XR57" pin="2"/>
-      <node ref="R20" pin="1"/>
-    </net>
-    <net code="86" name="Net-(R9-Pad1)">
-      <node ref="XR58" pin="2"/>
-      <node ref="U3" pin="6"/>
-      <node ref="R9" pin="1"/>
-    </net>
-    <net code="87" name="Net-(R8-Pad2)">
-      <node ref="R8" pin="2"/>
-      <node ref="U3" pin="7"/>
-      <node ref="XR59" pin="2"/>
-    </net>
-    <net code="88" name="Net-(U1-Pad6)">
-      <node ref="XR6" pin="2"/>
-      <node ref="U1" pin="6"/>
-    </net>
-    <net code="89" name="Net-(U1-Pad3)">
-      <node ref="XR3" pin="2"/>
-      <node ref="U1" pin="3"/>
-    </net>
-    <net code="90" name="Net-(U1-Pad4)">
-      <node ref="U1" pin="4"/>
-      <node ref="XR4" pin="2"/>
-    </net>
-    <net code="91" name="/MUSB_VBUS">
-      <node ref="XR42" pin="2"/>
-      <node ref="U1" pin="42"/>
-    </net>
-    <net code="92" name="/MUSB_DM">
-      <node ref="XR44" pin="2"/>
+    <net code="73" name="/MUSB_DM">
       <node ref="U1" pin="44"/>
+      <node ref="XR25" pin="2"/>
     </net>
-    <net code="93" name="/MUSB_DP">
-      <node ref="U1" pin="45"/>
-      <node ref="XR45" pin="2"/>
-    </net>
-    <net code="94" name="/MUSB_ID">
-      <node ref="XR43" pin="2"/>
-      <node ref="U1" pin="43"/>
-    </net>
-    <net code="95" name="/RED">
+    <net code="74" name="/RED">
       <node ref="D2" pin="1"/>
       <node ref="R4" pin="1"/>
     </net>
-    <net code="96" name="/GREEN">
+    <net code="75" name="/GREEN">
       <node ref="D3" pin="1"/>
       <node ref="R6" pin="1"/>
     </net>
-    <net code="97" name="/YELLOW">
+    <net code="76" name="/YELLOW">
       <node ref="D4" pin="1"/>
       <node ref="R7" pin="1"/>
     </net>
-    <net code="98" name="/BLUE_OTGEN">
-      <node ref="U4" pin="3"/>
+    <net code="77" name="/BLUE_OTGEN">
       <node ref="D5" pin="1"/>
       <node ref="R5" pin="1"/>
+      <node ref="U4" pin="3"/>
     </net>
-    <net code="99" name="/COIL_DRIVE">
-      <node ref="U102" pin="10"/>
-      <node ref="U102" pin="11"/>
-      <node ref="XR1021" pin="1"/>
-      <node ref="TP2A1" pin="1"/>
-    </net>
-    <net code="100" name="/MSERIAL_TX3_SCL2">
-      <node ref="XR29" pin="1"/>
+    <net code="78" name="/MSERIAL_TX3_SCL2">
       <node ref="U1" pin="29"/>
+      <node ref="XR7" pin="1"/>
     </net>
-    <net code="101" name="/MSERIAL_RX3_SDA2">
+    <net code="79" name="/MSERIAL_RX3_SDA2">
       <node ref="U1" pin="30"/>
-      <node ref="XR30" pin="1"/>
+      <node ref="XR7" pin="3"/>
     </net>
-    <net code="102" name="/MOLED_SCL1">
-      <node ref="XR61" pin="1"/>
-      <node ref="TP61" pin="1"/>
-      <node ref="XR61" pin="2"/>
-      <node ref="A101" pin="3"/>
-      <node ref="R107" pin="1"/>
+    <net code="80" name="/MOLED_SCL1">
+      <node ref="XR6" pin="1"/>
       <node ref="U1" pin="61"/>
     </net>
-    <net code="103" name="+3V3">
-      <node ref="A101" pin="2"/>
-      <node ref="U2" pin="1"/>
-      <node ref="R125" pin="1"/>
-      <node ref="R12" pin="1"/>
-      <node ref="R11" pin="2"/>
-      <node ref="R8" pin="1"/>
-      <node ref="R9" pin="2"/>
-      <node ref="C17" pin="1"/>
-      <node ref="C18" pin="1"/>
-      <node ref="R126" pin="1"/>
-      <node ref="R3" pin="1"/>
-      <node ref="SW103" pin="1"/>
-      <node ref="R137" pin="1"/>
-      <node ref="R124" pin="1"/>
-      <node ref="R107" pin="2"/>
-      <node ref="R128" pin="1"/>
-      <node ref="XR62" pin="1"/>
-      <node ref="R108" pin="1"/>
-      <node ref="XRV3" pin="3"/>
-      <node ref="U3" pin="9"/>
-      <node ref="XRV3" pin="1"/>
-      <node ref="J105" pin="1"/>
-      <node ref="R123" pin="1"/>
-      <node ref="U101" pin="8"/>
-      <node ref="R120" pin="1"/>
-      <node ref="J8" pin="4"/>
+    <net code="81" name="/MOLED_SDA1">
+      <node ref="XR6" pin="3"/>
       <node ref="U1" pin="62"/>
-      <node ref="R121" pin="1"/>
-      <node ref="TP3V3" pin="1"/>
     </net>
-    <net code="104" name="/MCU_GND">
-      <node ref="U1" pin="63"/>
-      <node ref="U1" pin="18"/>
-      <node ref="U1" pin="12"/>
-      <node ref="XRV0" pin="2"/>
-      <node ref="XRV0" pin="4"/>
-      <node ref="TPMV0" pin="1"/>
-    </net>
-    <net code="105" name="VLIPO">
-      <node ref="XR101" pin="4"/>
-      <node ref="XR101" pin="2"/>
+    <net code="82" name="VLIPO">
       <node ref="Q1" pin="3"/>
+      <node ref="XR27" pin="4"/>
+      <node ref="XR27" pin="2"/>
     </net>
-    <net code="106" name="/VLIPO-">
-      <node ref="XR102" pin="3"/>
-      <node ref="XR102" pin="1"/>
-      <node ref="J10" pin="2"/>
+    <net code="83" name="/VLIPO-">
       <node ref="TPGLIPO1" pin="1"/>
+      <node ref="XR28" pin="1"/>
+      <node ref="J10" pin="2"/>
+      <node ref="XR28" pin="3"/>
     </net>
-    <net code="107" name="/EXTVIN+">
-      <node ref="TPVEXT1" pin="1"/>
-      <node ref="XR1081" pin="1"/>
-      <node ref="J108" pin="2"/>
-      <node ref="XR1081" pin="3"/>
+    <net code="84" name="/EXTVIN+">
       <node ref="J108" pin="3"/>
+      <node ref="J108" pin="2"/>
+      <node ref="TPVEXT1" pin="1"/>
+      <node ref="XR29" pin="3"/>
+      <node ref="XR29" pin="1"/>
     </net>
-    <net code="108" name="/EXTVIN-">
-      <node ref="XR1082" pin="1"/>
-      <node ref="XR1082" pin="3"/>
-      <node ref="J108" pin="4"/>
-      <node ref="J108" pin="1"/>
+    <net code="85" name="/EXTVIN-">
       <node ref="TPGEXT1" pin="1"/>
+      <node ref="J108" pin="4"/>
+      <node ref="XR30" pin="3"/>
+      <node ref="J108" pin="1"/>
+      <node ref="XR30" pin="1"/>
     </net>
-    <net code="109" name="/ADC0">
-      <node ref="XR14" pin="1"/>
+    <net code="86" name="/MSPI1_~SS~_DAC1">
+      <node ref="U1" pin="20"/>
+      <node ref="U1" pin="16"/>
+      <node ref="XR1" pin="1"/>
+      <node ref="TP16" pin="1"/>
+      <node ref="XR2" pin="1"/>
+    </net>
+    <net code="87" name="/MSPI1_SCK_DAC2">
+      <node ref="XR1" pin="3"/>
+      <node ref="XR2" pin="3"/>
+      <node ref="TP17" pin="1"/>
+      <node ref="U1" pin="21"/>
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="88" name="/ADC0">
       <node ref="R101" pin="1"/>
+      <node ref="XR22" pin="1"/>
     </net>
-    <net code="110" name="/ADC1">
-      <node ref="XR15" pin="1"/>
+    <net code="89" name="/ADC1">
       <node ref="R102" pin="1"/>
+      <node ref="XR22" pin="3"/>
     </net>
-    <net code="111" name="/IN_ADC0">
+    <net code="90" name="/IN_ADC0">
       <node ref="J101" pin="1"/>
       <node ref="R101" pin="2"/>
     </net>
-    <net code="112" name="/IN_ADC1">
+    <net code="91" name="/IN_ADC1">
       <node ref="R102" pin="2"/>
       <node ref="J102" pin="1"/>
     </net>
-    <net code="113" name="/OUT_DAC1_PWM">
-      <node ref="R104" pin="1"/>
-      <node ref="R103" pin="2"/>
-      <node ref="J103" pin="1"/>
-    </net>
-    <net code="114" name="/DAC2_PWM">
-      <node ref="XR21" pin="2"/>
+    <net code="92" name="/DAC2_PWM2.4">
+      <node ref="XR1" pin="4"/>
       <node ref="R105" pin="1"/>
     </net>
-    <net code="115" name="/DAC1_PWM">
+    <net code="93" name="/DAC1_PWM2.3">
+      <node ref="XR1" pin="2"/>
       <node ref="R103" pin="1"/>
-      <node ref="XR20" pin="2"/>
     </net>
-    <net code="116" name="/OUT_DAC2_PWM">
-      <node ref="C104" pin="2"/>
-      <node ref="C106" pin="2"/>
-      <node ref="R106" pin="1"/>
-      <node ref="R105" pin="2"/>
+    <net code="94" name="/OUT_DAC2_PWM2.4">
       <node ref="J104" pin="1"/>
+      <node ref="C106" pin="2"/>
+      <node ref="R105" pin="2"/>
+      <node ref="R106" pin="1"/>
     </net>
-    <net code="117" name="/MRAM_~CS">
+    <net code="95" name="/OUT_DAC1_PWM2.3">
+      <node ref="R103" pin="2"/>
+      <node ref="J103" pin="1"/>
+      <node ref="C104" pin="2"/>
+      <node ref="R104" pin="1"/>
+    </net>
+    <net code="96" name="/MRAM_~CS">
+      <node ref="XR8" pin="4"/>
       <node ref="U101" pin="1"/>
       <node ref="TP33" pin="1"/>
-      <node ref="XR33" pin="2"/>
     </net>
-    <net code="118" name="/MRAM_CLK">
-      <node ref="XR34" pin="2"/>
-      <node ref="TP34" pin="1"/>
+    <net code="97" name="/MRAM_CLK">
       <node ref="U101" pin="6"/>
+      <node ref="XR8" pin="2"/>
+      <node ref="TP34" pin="1"/>
     </net>
-    <net code="119" name="Net-(A101-Pad4)">
-      <node ref="A101" pin="4"/>
-      <node ref="XR62" pin="2"/>
-      <node ref="R108" pin="2"/>
+    <net code="98" name="/OLED_SDA1">
       <node ref="TP62" pin="1"/>
+      <node ref="R108" pin="2"/>
+      <node ref="A101" pin="4"/>
+      <node ref="XR6" pin="4"/>
     </net>
-    <net code="120" name="/MRAM_SO">
+    <net code="99" name="/OLED_SCL1">
+      <node ref="TP61" pin="1"/>
+      <node ref="R107" pin="1"/>
+      <node ref="XR6" pin="2"/>
+      <node ref="A101" pin="3"/>
+    </net>
+    <net code="100" name="/MRAM_SO">
       <node ref="TP35" pin="1"/>
       <node ref="U101" pin="2"/>
-      <node ref="XR35" pin="2"/>
+      <node ref="XR9" pin="2"/>
     </net>
-    <net code="121" name="/MRAM_SI">
+    <net code="101" name="/MRAM_SI">
       <node ref="U101" pin="5"/>
+      <node ref="XR9" pin="4"/>
       <node ref="TP36" pin="1"/>
-      <node ref="XR36" pin="2"/>
     </net>
-    <net code="122" name="/SERIAL_TX3_SCL2">
-      <node ref="R11" pin="1"/>
+    <net code="102" name="/SERIAL_TX3_SCL2">
       <node ref="J105" pin="2"/>
-      <node ref="XR29" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="XR7" pin="2"/>
       <node ref="TP29" pin="1"/>
     </net>
-    <net code="123" name="/SERIAL_RX3_SDA2">
+    <net code="103" name="/SERIAL_RX3_SDA2">
       <node ref="TP30" pin="1"/>
       <node ref="R12" pin="2"/>
+      <node ref="XR7" pin="4"/>
       <node ref="J105" pin="3"/>
     </net>
-    <net code="124" name="/SDIO_D2">
-      <node ref="XR51" pin="2"/>
-      <node ref="J8" pin="1"/>
+    <net code="104" name="/SDIO_D2">
       <node ref="TP51" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="XR11" pin="2"/>
     </net>
-    <net code="125" name="/SDIO_D3">
-      <node ref="XR52" pin="2"/>
+    <net code="105" name="/SDIO_D3">
+      <node ref="XR11" pin="4"/>
       <node ref="J8" pin="2"/>
       <node ref="TP52" pin="1"/>
     </net>
-    <net code="126" name="/SDIO_CMD">
+    <net code="106" name="/SDIO_CMD">
+      <node ref="XR12" pin="2"/>
       <node ref="TP54" pin="1"/>
       <node ref="J8" pin="3"/>
-      <node ref="XR54" pin="2"/>
     </net>
-    <net code="127" name="/SDIO_CLK">
+    <net code="107" name="/SDIO_CLK">
+      <node ref="XR12" pin="4"/>
       <node ref="TP53" pin="1"/>
       <node ref="J8" pin="5"/>
-      <node ref="XR53" pin="2"/>
     </net>
-    <net code="128" name="/SDIO_D0">
-      <node ref="XR39" pin="2"/>
+    <net code="108" name="/SDIO_D0">
       <node ref="TP39" pin="1"/>
       <node ref="J8" pin="7"/>
+      <node ref="XR13" pin="2"/>
     </net>
-    <net code="129" name="/SDIO_D1">
-      <node ref="XR40" pin="2"/>
+    <net code="109" name="/SDIO_D1">
+      <node ref="XR13" pin="4"/>
       <node ref="TP40" pin="1"/>
       <node ref="J8" pin="8"/>
     </net>
-    <net code="130" name="/SDIO_SW">
+    <net code="110" name="/SDIO_SW">
       <node ref="TP41" pin="1"/>
       <node ref="J8" pin="10"/>
-      <node ref="XR41" pin="2"/>
+      <node ref="XR14" pin="2"/>
     </net>
-    <net code="131" name="Net-(R110-Pad2)">
-      <node ref="TP8" pin="1"/>
-      <node ref="R110" pin="2"/>
-      <node ref="XR8" pin="2"/>
+    <net code="111" name="Net-(R110-Pad2)">
+      <node ref="XR15" pin="2"/>
       <node ref="SW110" pin="2"/>
       <node ref="R120" pin="2"/>
+      <node ref="TP8" pin="1"/>
+      <node ref="R110" pin="2"/>
     </net>
-    <net code="132" name="Net-(R111-Pad2)">
+    <net code="112" name="Net-(R111-Pad2)">
+      <node ref="R121" pin="2"/>
       <node ref="SW111" pin="2"/>
       <node ref="R111" pin="2"/>
-      <node ref="R121" pin="2"/>
-      <node ref="XR9" pin="2"/>
+      <node ref="XR15" pin="4"/>
       <node ref="TP9" pin="1"/>
     </net>
-    <net code="133" name="Net-(R112-Pad2)">
+    <net code="113" name="Net-(R112-Pad2)">
+      <node ref="SW112" pin="2"/>
       <node ref="R112" pin="2"/>
       <node ref="R123" pin="2"/>
-      <node ref="SW112" pin="2"/>
       <node ref="TP10" pin="1"/>
-      <node ref="XR10" pin="2"/>
+      <node ref="XR16" pin="2"/>
     </net>
-    <net code="134" name="Net-(R113-Pad2)">
-      <node ref="SW113" pin="2"/>
-      <node ref="XR11" pin="2"/>
-      <node ref="TP11" pin="1"/>
+    <net code="114" name="Net-(R113-Pad2)">
+      <node ref="XR16" pin="4"/>
       <node ref="R113" pin="2"/>
       <node ref="R124" pin="2"/>
+      <node ref="TP11" pin="1"/>
+      <node ref="SW113" pin="2"/>
     </net>
-    <net code="135" name="Net-(R114-Pad2)">
-      <node ref="TP24" pin="1"/>
-      <node ref="XR24" pin="2"/>
+    <net code="115" name="Net-(R114-Pad2)">
       <node ref="R114" pin="2"/>
+      <node ref="XR17" pin="2"/>
       <node ref="SW3" pin="2"/>
       <node ref="R125" pin="2"/>
+      <node ref="TP24" pin="1"/>
     </net>
-    <net code="136" name="Net-(R115-Pad2)">
-      <node ref="R126" pin="2"/>
+    <net code="116" name="Net-(R115-Pad2)">
       <node ref="R115" pin="2"/>
-      <node ref="SW4" pin="2"/>
+      <node ref="XR17" pin="4"/>
+      <node ref="R126" pin="2"/>
       <node ref="TP25" pin="1"/>
-      <node ref="XR25" pin="2"/>
+      <node ref="SW4" pin="2"/>
     </net>
-    <net code="137" name="Net-(R116-Pad2)">
-      <node ref="XR37" pin="2"/>
-      <node ref="SW5" pin="2"/>
-      <node ref="TP37" pin="1"/>
-      <node ref="R137" pin="2"/>
-      <node ref="R116" pin="2"/>
-    </net>
-    <net code="138" name="Net-(R117-Pad2)">
-      <node ref="XR38" pin="2"/>
-      <node ref="SW6" pin="2"/>
-      <node ref="R128" pin="2"/>
-      <node ref="TP38" pin="1"/>
-      <node ref="R117" pin="2"/>
-    </net>
-    <net code="139" name="/LED_RED">
+    <net code="117" name="/LED_RED">
       <node ref="TP46" pin="1"/>
-      <node ref="XR46" pin="2"/>
+      <node ref="XR20" pin="2"/>
       <node ref="R4" pin="2"/>
     </net>
-    <net code="140" name="/LED_GREEN">
-      <node ref="XR49" pin="2"/>
-      <node ref="TP49" pin="1"/>
+    <net code="118" name="/LED_GREEN">
       <node ref="R6" pin="2"/>
+      <node ref="TP49" pin="1"/>
+      <node ref="XR20" pin="4"/>
     </net>
-    <net code="141" name="/LED_YELLOW">
-      <node ref="R7" pin="2"/>
-      <node ref="TP50" pin="1"/>
-      <node ref="XR50" pin="2"/>
-    </net>
-    <net code="142" name="/LED_BLUE">
-      <node ref="XR56" pin="2"/>
-      <node ref="TP56" pin="1"/>
+    <net code="119" name="/LED_BLUE">
       <node ref="R5" pin="2"/>
+      <node ref="TP56" pin="1"/>
+      <node ref="XR21" pin="4"/>
     </net>
-    <net code="143" name="/RELAY">
-      <node ref="R109" pin="1"/>
-      <node ref="TP2" pin="1"/>
-      <node ref="U102" pin="7"/>
-      <node ref="XR2" pin="2"/>
-      <node ref="U102" pin="6"/>
-    </net>
-    <net code="144" name="/MDAC1_PWM">
-      <node ref="TP16" pin="1"/>
-      <node ref="U1" pin="16"/>
-      <node ref="U1" pin="20"/>
-      <node ref="XR20" pin="1"/>
-    </net>
-    <net code="145" name="/MDAC2_PWM">
-      <node ref="U1" pin="17"/>
-      <node ref="U1" pin="21"/>
-      <node ref="TP17" pin="1"/>
-      <node ref="XR21" pin="1"/>
-    </net>
-    <net code="146" name="/MADC0">
-      <node ref="XR14" pin="2"/>
-      <node ref="U1" pin="14"/>
+    <net code="120" name="/MADC0">
+      <node ref="XR22" pin="2"/>
       <node ref="TP14" pin="1"/>
+      <node ref="U1" pin="14"/>
     </net>
-    <net code="147" name="/MADC1">
-      <node ref="U1" pin="15"/>
+    <net code="121" name="/MADC1">
+      <node ref="XR22" pin="4"/>
       <node ref="TP15" pin="1"/>
-      <node ref="XR15" pin="2"/>
+      <node ref="U1" pin="15"/>
     </net>
-    <net code="148" name="/MCU_3V3">
+    <net code="122" name="/MCU_3V3">
+      <node ref="L1" pin="1"/>
       <node ref="C6" pin="1"/>
       <node ref="C5" pin="1"/>
       <node ref="C4" pin="1"/>
       <node ref="C3" pin="1"/>
+      <node ref="TPMV3" pin="1"/>
       <node ref="C7" pin="1"/>
       <node ref="U1" pin="64"/>
       <node ref="U1" pin="48"/>
       <node ref="U1" pin="32"/>
       <node ref="U1" pin="19"/>
-      <node ref="XRV3" pin="4"/>
-      <node ref="XRV3" pin="2"/>
-      <node ref="TPMV3" pin="1"/>
-      <node ref="L1" pin="1"/>
+      <node ref="XR31" pin="2"/>
+      <node ref="XR31" pin="4"/>
     </net>
-    <net code="149" name="VBUS">
+    <net code="123" name="+3V3">
+      <node ref="TP3V3" pin="1"/>
+      <node ref="R123" pin="1"/>
+      <node ref="R108" pin="1"/>
+      <node ref="R107" pin="2"/>
+      <node ref="J8" pin="4"/>
+      <node ref="A101" pin="2"/>
+      <node ref="J105" pin="1"/>
+      <node ref="U101" pin="8"/>
+      <node ref="R12" pin="1"/>
+      <node ref="R11" pin="2"/>
+      <node ref="J109" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R9" pin="2"/>
+      <node ref="R128" pin="1"/>
+      <node ref="R137" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="SW103" pin="1"/>
+      <node ref="R126" pin="1"/>
+      <node ref="R121" pin="1"/>
+      <node ref="XR31" pin="3"/>
+      <node ref="R125" pin="1"/>
+      <node ref="XR31" pin="1"/>
+      <node ref="R124" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C18" pin="1"/>
+      <node ref="R17" pin="1"/>
+      <node ref="R120" pin="1"/>
+      <node ref="C17" pin="1"/>
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="124" name="VBUS">
       <node ref="J9" pin="1"/>
       <node ref="Q1" pin="1"/>
+      <node ref="R10" pin="2"/>
       <node ref="R22" pin="1"/>
+      <node ref="TPVBUS5" pin="1"/>
       <node ref="D1" pin="2"/>
       <node ref="U4" pin="5"/>
-      <node ref="TPVBUS5" pin="1"/>
-      <node ref="R10" pin="2"/>
     </net>
-    <net code="150" name="V+">
-      <node ref="U2" pin="8"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="D1" pin="1"/>
-      <node ref="U4" pin="1"/>
-      <node ref="C16" pin="1"/>
-      <node ref="XR1081" pin="4"/>
-      <node ref="XR1081" pin="2"/>
+    <net code="125" name="V+">
       <node ref="U102" pin="9"/>
-      <node ref="TPVIN5" pin="1"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="Q1" pin="2"/>
       <node ref="K101" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="TPVIN5" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="XR29" pin="2"/>
+      <node ref="XR29" pin="4"/>
     </net>
-    <net code="151" name="/VLIPO+">
+    <net code="126" name="/VLIPO+">
+      <node ref="XR27" pin="3"/>
+      <node ref="XR27" pin="1"/>
       <node ref="TPVLIPO1" pin="1"/>
       <node ref="J10" pin="1"/>
-      <node ref="XR101" pin="3"/>
-      <node ref="XR101" pin="1"/>
+    </net>
+    <net code="127" name="/MSPI1_MISO">
+      <node ref="XR3" pin="1"/>
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="128" name="/MSPI1_MOSI">
+      <node ref="U1" pin="23"/>
+      <node ref="XR3" pin="3"/>
+    </net>
+    <net code="129" name="/SPI1_MISO">
+      <node ref="J109" pin="4"/>
+      <node ref="TP22" pin="1"/>
+      <node ref="XR3" pin="2"/>
+    </net>
+    <net code="130" name="/SPI1_MOSI">
+      <node ref="XR3" pin="4"/>
+      <node ref="TP23" pin="1"/>
+      <node ref="J109" pin="5"/>
+    </net>
+    <net code="131" name="/SPI1_~SS">
+      <node ref="TP20" pin="1"/>
+      <node ref="J109" pin="2"/>
+      <node ref="XR2" pin="2"/>
+    </net>
+    <net code="132" name="/SPI1_SCK">
+      <node ref="TP21" pin="1"/>
+      <node ref="J109" pin="3"/>
+      <node ref="XR2" pin="4"/>
+    </net>
+    <net code="133" name="/LED_YELLOW">
+      <node ref="R7" pin="2"/>
+      <node ref="TP50" pin="1"/>
+      <node ref="XR21" pin="2"/>
+    </net>
+    <net code="134" name="Net-(R117-Pad2)">
+      <node ref="XR18" pin="4"/>
+      <node ref="R117" pin="2"/>
+      <node ref="TP38" pin="1"/>
+      <node ref="R128" pin="2"/>
+      <node ref="SW102" pin="A"/>
+    </net>
+    <net code="135" name="Net-(R116-Pad2)">
+      <node ref="XR18" pin="2"/>
+      <node ref="R137" pin="2"/>
+      <node ref="SW102" pin="B"/>
+      <node ref="R116" pin="2"/>
+      <node ref="TP37" pin="1"/>
+    </net>
+    <net code="136" name="Net-(R17-Pad2)">
+      <node ref="U1" pin="55"/>
+      <node ref="SW102" pin="S1"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="137" name="Net-(XR14-Pad3)">
+      <node ref="XR14" pin="3"/>
+    </net>
+    <net code="138" name="Net-(XR14-Pad4)">
+      <node ref="XR14" pin="4"/>
+    </net>
+    <net code="139" name="GNDM">
+      <node ref="XR32" pin="4"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="XR32" pin="2"/>
+      <node ref="U1" pin="63"/>
+      <node ref="U1" pin="18"/>
+      <node ref="U1" pin="12"/>
+      <node ref="C12" pin="2"/>
+      <node ref="TPMV0" pin="1"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C10" pin="2"/>
+    </net>
+    <net code="140" name="/MACCEL_INT">
+      <node ref="U1" pin="28"/>
+      <node ref="XR4" pin="3"/>
+    </net>
+    <net code="141" name="/MACCEL_AVDD">
+      <node ref="XR4" pin="1"/>
+      <node ref="U1" pin="57"/>
+    </net>
+    <net code="142" name="/MACCEL_SCL">
+      <node ref="XR5" pin="3"/>
+      <node ref="U1" pin="58"/>
+    </net>
+    <net code="143" name="/MACCEL_SDA">
+      <node ref="XR5" pin="1"/>
+      <node ref="U1" pin="59"/>
+    </net>
+    <net code="144" name="/ACCEL_INT">
+      <node ref="U3" pin="5"/>
+      <node ref="XR4" pin="4"/>
+      <node ref="R14" pin="1"/>
+      <node ref="TP28" pin="1"/>
+    </net>
+    <net code="145" name="/ACCEL_AVDD">
+      <node ref="XR4" pin="2"/>
+      <node ref="TP57" pin="1"/>
+      <node ref="U3" pin="3"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="146" name="/ACCEL_SCL">
+      <node ref="R9" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="TP58" pin="1"/>
+      <node ref="XR5" pin="4"/>
+    </net>
+    <net code="147" name="/ACCEL_SDA">
+      <node ref="R8" pin="2"/>
+      <node ref="U3" pin="7"/>
+      <node ref="TP59" pin="1"/>
+      <node ref="XR5" pin="2"/>
+    </net>
+    <net code="148" name="/KA.COM">
+      <node ref="J107" pin="3"/>
+      <node ref="J107" pin="2"/>
+      <node ref="K101" pin="6"/>
+    </net>
+    <net code="149" name="/KA.NC">
+      <node ref="J107" pin="1"/>
+      <node ref="K101" pin="7"/>
+    </net>
+    <net code="150" name="/KA.NO">
+      <node ref="J107" pin="4"/>
+      <node ref="K101" pin="5"/>
+    </net>
+    <net code="151" name="/KB.COM">
+      <node ref="K101" pin="3"/>
+      <node ref="J107" pin="7"/>
+      <node ref="J107" pin="6"/>
+    </net>
+    <net code="152" name="/KB.NC">
+      <node ref="K101" pin="2"/>
+      <node ref="J107" pin="8"/>
+    </net>
+    <net code="153" name="/KB.NO">
+      <node ref="K101" pin="4"/>
+      <node ref="J107" pin="5"/>
     </net>
   </nets>
 </export>
